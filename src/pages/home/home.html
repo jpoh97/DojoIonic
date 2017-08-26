@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My Dojo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+  <ion-label floating>Username</ion-label>
+  <ion-input type="text" [(ngModel)]="username"></ion-input>
+</ion-item>
+
+  <button ion-button block (click)="myFunction()">Hola</button>
+
+
+<ion-card *ngIf="exist">
+  <ion-card-content>
+    <ion-card-title>
+      Nombre de usuario: {{ informationUser.login }}
+    </ion-card-title>
+
+      <img [src]="informationUser.avatar_url"/>
+
+      Número de repositorios: {{ informationUser.public_repos }}
+  </ion-card-content>
+</ion-card>
+
+
+</ion-content>
