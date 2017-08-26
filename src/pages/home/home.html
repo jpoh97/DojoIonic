@@ -13,7 +13,7 @@
   <ion-input type="text" [(ngModel)]="username"></ion-input>
 </ion-item>
 
-  <button ion-button block (click)="myFunction()">Hola</button>
+  <button ion-button block (click)="myFunction()">Buscar</button>
 
 
 <ion-card *ngIf="exist">
@@ -24,7 +24,12 @@
 
       <img [src]="informationUser.avatar_url"/>
 
+              <ion-card-content>
       Número de repositorios: {{ informationUser.public_repos }}
+    </ion-card-content>
+            <ion-card-content>
+      Descripcion: {{ informationUser.bio }}
+    </ion-card-content>
   </ion-card-content>
 </ion-card>
 

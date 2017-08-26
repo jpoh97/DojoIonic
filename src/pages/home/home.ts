@@ -10,8 +10,6 @@ export class HomePage {
 
   informationUser:any = [];
   username:string = ""
-  repositorios:string = ""
-  descripcion:string = ""
   repos:any = HomePage
   exist:boolean = false
 
